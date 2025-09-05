@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { footerLinks } from "@/constants";
+import { footerLinks } from "@/constants/index";
 
 const Footer = () => (
   <footer className='flex flex-col text-black-100  mt-5 border-t border-gray-100'>
@@ -9,7 +9,7 @@ const Footer = () => (
       <div className='flex flex-col justify-start items-start gap-6'>
         <Image src='/logo.svg' alt='logo' width={118} height={18} className='object-contain' />
         <p className='text-base text-gray-700'>
-          Carhub 2023 <br />
+          JOBhub 2025 <br />
           All Rights Reserved &copy;
         </p>
       </div>
@@ -41,5 +41,6 @@ const Footer = () => (
 
   </footer>
 );
+
 
 export default Footer;
