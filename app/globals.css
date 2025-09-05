@@ -8,8 +8,6 @@
   font-family: "Manrope", sans-serif;
 }
 
-
-
 /* START: General styles */
 .max-width {
   max-width: 1440px;
@@ -18,12 +16,12 @@
 }
 
 .padding-x {
-  padding-left: 1.5rem; 
+  padding-left: 1.5rem;  /* sm:px-16 fallback */
   padding-right: 1.5rem;
 }
 
 .padding-y {
-  padding-top: 1rem;
+  padding-top: 1rem; /* py-4 */
   padding-bottom: 1rem;
 }
 
@@ -140,4 +138,126 @@
     right: -50%;
     height: 100vh;
   }
+}
+
+/* Job-specific styles */
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 3xl;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  border-radius: 2.5rem;
+  background: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.searchbar_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  max-width: sm;
+  height: 48px;
+}
+
+.search-company {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.search-company__input {
+  width: 100%;
+  height: 48px;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.search-company__option {
+  position: relative;
+  cursor: default;
+  padding: 0.5rem 1rem;
+  color: #1F2937;
+}
+
+.home__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.25rem;
+}
+
+.home__filters {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.home__filter-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.home__jobs-wrapper {
+  display: grid;
+  width: 100%;
+  padding-top: 3.5rem;
+  gap: 2rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .home__jobs-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .home__jobs-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.home__error-container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Footer styles */
+.footer__links {
+  display: flex;
+  max-width: lg;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1.25rem;
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+  min-width: 170px;
 }
