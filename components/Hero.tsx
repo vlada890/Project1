@@ -8,11 +8,11 @@ const Hero = () => {
     <div className="hero">
         <div className="flex-1 pt-36 padding-x">
             <h1 className='hero__title'>
-                Find ,book or rent a car.
+          Find, apply, or discover your next job opportunity—quickly and effortlessly!
             </h1>
-            <p className="hero__subtitle"> streamline your car experience with us</p>
+            <p className="hero__subtitle"> streamline your job experience with us</p>
             <CustomButton
-            title="explore cars"
+            title="Explore Jobs"
             containerStyles="bg-primary-blue text-white rounded-full mt-10"
             handleClick={handleScroll}
             />
@@ -28,5 +28,6 @@ const Hero = () => {
     </div>
   )
 }
+
 
 export default Hero
